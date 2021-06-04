@@ -2,9 +2,22 @@ import numpy as np
 import random
 
 luve = random.sample(range(0,1000), 1000)
-k = 5
+k = 5.2
+
 
 def sublist(listen, k): # O[NlogN]
+    '''
+
+    :param listen: a list with integer values
+    :param k: any integer above 0
+    :return: depending on list lenght and composition the return gives us one or multible sublists where each integer is k or less steps away from each other
+
+    '''
+    try:
+        int(k)
+    except ValueError:
+        print("integer expected")
+
     sublists = []
     l = np.sort(listen) # O[NlogN]
     number_of_sub = 0
