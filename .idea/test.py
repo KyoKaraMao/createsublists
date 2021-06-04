@@ -2,7 +2,7 @@ import numpy as np
 import random
 
 luve = random.sample(range(0,1000), 1000)
-k = 5
+k = 3
 
 
 def sublist(listen, k): # O[NlogN]
